@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200&display=swap');
+body
+{
+  background-color: rgb(0, 0, 0);
+  height:200vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.main-div{
+  height:inherit;
+  width: 100%;
+  position:relative;
+  display:flex;
+  flex-direction: column;
+}
+.firstpg
+{
+ position:relative;
+ height: 97vh;
+ width: 100%;
+ margin-bottom: 0;
+ 
+}
+.heading
+{
+  position:absolute;
+  top:0.3%;
+  left:37%;
+  text-align: center;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 250%;
+  color:white;
+  border: 4px solid rgb(255, 255, 255);
+  border-radius: 1px;
+  width:25%;
+}
+/*  */
+.video-container 
+{
+  position:relative;
+  display: block;
+  width : 100%;
+  height :auto;
+  background-color:transparent;
+ 
+}
+.video-container .video 
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  opacity:0.4;
+  pointer-events: none;
+}
+.grid-container-container
+{
+  display: block;
+  margin: 0;
+  padding: 0;
+  height: fit-content;
+  width:100%;
+  position:absolute;
+  top:15%;
+  z-index: 2;
+}
+.grid-container{
+  display:flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.bigger-box
+{
+ display:grid;
+ grid-template-columns: repeat(3,20vw);
+ grid-auto-rows:auto;
+ color: white;
+ margin-top: 5%;
+ gap:0.2%;
+}
+.smaller-boxes
+{
+  text-align:center;
+  background-color: none;
+  border: 1px solid rgb(179, 176, 176);
+  border-radius: 5px;
+  padding:10vh;
+}
+a,a:visited{
+  color:white;
+  text-decoration:none;
+
+}
+.smaller-boxes:nth-child(1):hover{
+  background-color: rgba(94, 153, 76, 0.192);
+  padding-left:39%;
+  font-size:120%;
+}
+.smaller-boxes:nth-child(2):hover{
+  background-color: rgba(182, 61, 61, 0.192);
+  padding-left:39%;
+  font-size:120%;
+}
+.smaller-boxes:nth-child(3):hover{
+  background-color: rgba(72, 187, 172, 0.192);
+  padding-left:39%;
+  font-size:120%;
+}
+.smaller-boxes:nth-child(4):hover{
+  background-color: rgba(192, 73, 192, 0.192);
+  padding-left:39%;
+  font-size:120%;
+}
+.smaller-boxes:nth-child(5):hover{
+  background-color: rgba(152, 153, 66, 0.192);
+  padding-left:39%;
+  font-size:120%;
+}
+.smaller-boxes:nth-child(6):hover{
+  background-color: rgba(94, 153, 76, 0.192);
+  padding-left:39%;
+  font-size:120%;
+}
+.smaller-boxes:nth-child(7):hover{
+  background-color: rgba(94, 153, 76, 0.192);
+  padding-left:39%;
+  font-size:120%;
+}
+.smaller-boxes:nth-child(8):hover{
+  background-color: rgba(197, 87, 147, 0.192);
+  padding-left:39%;
+  font-size:120%;
+}
+.smaller-boxes:nth-child(9):hover{
+  background-color: rgba(77, 70, 143, 0.192);
+  padding-left:39%;
+  font-size:120%;
+}
+/* .secondpg{
+  display:block;
+  color:white;
+  height:100vh;
+  padding:0;
+  background-color: rgba(7, 2, 53, 0.726);
+} */
+
+.secondpg{
+  height: 103vh;
+  display:block;
+  box-sizing: border-box;
+  background-color:rgba(44,45,49,255);
+  margin-top:0;
+  overflow: hidden;
+  color:white;
+  font-family:sans-serif;
+  
+}
+.card-container{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  /* border:2px solid rgb(255, 255, 255); */
+  height:100%;
+  width:100%;
+  gap:5%;
+  position: relative;
+
+}
+.card:nth-child(1){
+  height:50%;
+  width:21%;
+  box-shadow: 11px 11px 35px  rgba(0, 0, 0, 0.5);
+  background-image: url(pngwing.com\ \(2\).png);
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  border-top:1px solid rgba(255, 255, 255, 0.548);
+  border-left:1px solid rgba(255, 255, 255, 0.548);
+  border-radius:5px
+
+}
+.card:nth-child(2){
+  height:50%;
+  width:21%;
+  box-shadow: 11px 11px 35px  rgba(0, 0, 0, 0.5);
+  background-image: url(pngwing.com\ \(2\).png);
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  border-top:1px solid white;
+  border-left:1px solid white;
+  border-radius:5px
+
+}.card:nth-child(3){
+  height:50%;
+  width:21%;
+  box-shadow: 11px 11px 35px  rgba(0, 0, 0, 0.5);
+  background-image: url(pngwing.com\ \(2\).png);
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  border-top:1px solid white;
+  border-left:1px solid white;
+  border-radius:5px
+}
+/* .logoimg{
+  height:100px;
+  width:110px;
+  opacity: 1;
+  position:absolute;
+  display: inline-block;
+  top:0;
+  left:0;
+} */
