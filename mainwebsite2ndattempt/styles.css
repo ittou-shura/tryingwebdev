@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+
+    scroll-snap-type: y mandatory;
+}
+body
+{
+    background-color: black;
+    z-index: -1;
+}
+.main-div
+{
+    width: 100%;
+}
+.firstpage
+{
+    position: relative;
+    width:auto;
+    height: auto;
+    max-height: 100vh;
+
+    /* display: flex;
+    justify-content: center; */
+    /* height: 100vh; */
+    background-color:transparent;
+    /* border:2px solid red; */
+    scroll-snap-align: center;
+    z-index: 0;
+}
+.firstpage .bgvideo
+{
+    position:relative;
+    top:0;
+    left:0;
+    width:100%;
+    z-index: -1;
+    /* border:2px solid green; */
+}
+.firstpage .bgvideo video
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100% ;
+    /* margin-top: 1.5vh; */
+    margin:0;
+    opacity:0.3;
+}
+.firstpage .bgvideo::before{
+    content: '';
+    display:block;
+    height:1.5vh;
+    width:100%;
+    color:red;
+    background-color: rgba(128,128,129,255);
+}
+.videoafter{
+    height:0.97585706673vh;
+    width:100%;
+    background-color: rgba(105,100,100,255);
+    position: absolute;
+    bottom:0;
+}
+.firstpage .header{
+    font-size: 1.5vw ;
+    position:absolute;
+    left:2vw;
+    line-height: 42px;
+    margin:9px;
+    text-align: center;
+}
+.firstpage .header.active{
+    transform:translateX(0px);
+    transform: translateY(-12px);
+    animation: name-drop 2.5s linear;
+}
+@keyframes name-drop{
+    10%{
+
+    }
+}
+.firstpage .header h1{
+    display: block;
+    /* text-align: center; */
+    /* border:2px solid white; */
+    color:white;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    margin:2px;
+}
+.firstpage .header h1:nth-child(1){
+    display:inline-block;
+    border:2px solid white;
+    border-radius: 10%;
+    padding:5px;
+    margin-top: 1rem;
+}
+.secondpage{
+    position:relative;
+    height:100vh;
+    background-color: blue;
+    scroll-snap-align: center;
+    z-index: 0;
+    /* opacity: 0.1; */
+}
+.secondpage .content h1{
+    text-align: center;
+}
+/* .secondpage .content p{
+    letter-spacing: 2px;
+    font-size: 1rem;
+    font-family:sans-serif;
+    margin:12vw;
+    color:white;
+    text-align: center;
+} */
+#preloader{
+    background-color: black;
+    background-image: url(9_3.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:100;
+    opacity:1;
+
+}
